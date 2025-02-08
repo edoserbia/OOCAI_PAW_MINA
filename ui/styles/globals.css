@@ -1,0 +1,40 @@
+/* ... existing styles ... */
+
+/* 音乐选择下拉框样式 */
+.custom-select-dropdown .ant-select-item {
+  color: white !important;
+  background: transparent !important;
+}
+
+.custom-select-dropdown .ant-select-item-option-active {
+  background-color: rgba(251, 191, 36, 0.1) !important;
+}
+
+.custom-select-dropdown .ant-select-item-option-selected {
+  background-color: rgba(251, 191, 36, 0.2) !important;
+}
+
+.custom-select-dropdown .ant-select-item-option-content {
+  width: 100%;
+}
+
+.custom-select-dropdown .ant-select-item:hover {
+  background-color: rgba(251, 191, 36, 0.1) !important;
+}
+
+/* 搜索框样式 */
+.ant-select-selection-search-input {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+/* 选择框样式 */
+.ant-select-selector {
+  background-color: #1f2937 !important;
+  border-color: #374151 !important;
+  color: white !important;
+}
+
+.ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+  border-color: #f59e0b !important;
+} 
