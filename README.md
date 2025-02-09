@@ -1,162 +1,177 @@
 # OOCAI-PAW
 
-## 项目简介
-PAW是一个AgentFi 的多Agent对话系统，通过OwnYourAI 确保创作者权益，将AI Agent转化为用户拥有的链上资产，用户数据通过zk验证，最终实现社区驱动的AI进化。用户可以创建故事，故事里可以有任意多的角色，可以扮演女友，玩猜谜游戏，进入海贼王中与动画角色互动，进行心理测试，算命等等各种无限制多角色娱乐交互。角色可以爬取网络信息，并自主学习资讯、推文等，经过多agent互相讨论研究，实现金融事件分析、加密货币行情分析、KOL交互、事件决策等实际任务。
+## Introduction
+PAW is a multi-agent dialogue system based on AgentFi that protects creators' rights through OwnYourAI, transforms AI Agents into user-owned on-chain assets, and verifies user data through zk verification to achieve community-driven AI evolution. Users can create stories with unlimited characters, role-play as girlfriends, play puzzle games, interact with anime characters in One Piece, take psychological tests, get fortune readings, and engage in various unlimited multi-character entertainment interactions. Characters can crawl web information and autonomously learn news, tweets, etc., and through multi-agent discussions and research, achieve practical tasks such as financial event analysis, cryptocurrency market analysis, KOL interaction, and event decision-making.
 
-## 系统特点
-- 🎭 多角色互动：支持多个AI角色同时参与对话
-- 📝 多样化模板：提供群聊、海龟汤、开放世界、事件爬虫、加密货币分析、KOL交互、事件决策等多种故事模板
-- 🎨 角色定制：支持自定义角色形象、性格和背景
-- 🔄 对话管理：支持对话回退、恢复和历史记录
-- 🎵 多媒体支持：集成背景音乐、图片生成等功能
-- 🔒 Web3登录：使用Web3钱包进行安全认证
+## Demo Video
+<div align="center">
+  <iframe src="//player.bilibili.com/player.html?bvid=BV1eTNUecEG1&page=1&high_quality=1&danmaku=0" 
+    width="800" 
+    height="600" 
+    scrolling="no" 
+    border="0" 
+    frameborder="no" 
+    framespacing="0" 
+    allowfullscreen="true"> 
+  </iframe>
+</div>
 
-## 技术架构
+If the video doesn't play, please [click here to watch on Bilibili](https://www.bilibili.com/video/BV1eTNUecEG1/?vd_source=ed1b58788a2e24a3b428da13bccaac1d)
 
-### 后端技术栈
-- 框架：FastAPI
-- 数据库：MongoDB
-- AI模型：DeepSeek Chat
-- 开发语言：Python 3.10+
-- 认证：Web3钱包
+## System Features
+- 🎭 Multi-Character Interaction: Support multiple AI characters participating in conversations simultaneously
+- 📝 Diverse Templates: Provide various story templates including group chat, lateral thinking puzzles, open world, event crawler, cryptocurrency analysis, KOL interaction, and event decision-making
+- 🎨 Character Customization: Support customizing character appearance, personality, and background
+- 🔄 Conversation Management: Support conversation rollback, recovery, and history
+- 🎵 Multimedia Support: Integrate background music and image generation features
+- 🔒 Web3 Login: Secure authentication using Web3 wallet
 
-### 前端技术栈
-- 框架：Next.js 13+
-- UI库：TailwindCSS
-- 状态管理：React Context
-- Web3集成：ethers.js
-- 开发语言：TypeScript
+## Technical Architecture
 
-## 核心功能
+### Backend Stack
+- Framework: FastAPI
+- Database: MongoDB
+- AI Model: DeepSeek Chat
+- Development Language: Python 3.10+
+- Authentication: Web3 wallet
 
-### 1. 故事模板系统
-- 预定义多种故事模板（群聊、海龟汤、开放世界等）
-- 模板组件管理（角色选择、文本输入、音乐选择等）
-- 模板状态管理（激活/禁用）
-- 模板配置自动加载
+### Frontend Stack
+- Framework: Next.js 13+
+- UI Library: TailwindCSS
+- State Management: React Context
+- Web3 Integration: ethers.js
+- Development Language: TypeScript
 
-### 2. 角色系统
-- 默认旁白角色：所有故事必须包含的叙述者角色
-- 自定义角色：创建具有不同性格特征的角色
-- 角色关系管理：通过故事设置关联角色
-- 角色设定生成：通过LLM自动生成角色特征
+## Core Features
 
-### 3. 对话系统
-- 实时对话响应
-- 对话历史管理
-- 支持对话回退和恢复
-- 多角色协同对话
+### 1. Story Template System
+- Predefined story templates (group chat, lateral thinking puzzles, open world, etc.)
+- Template component management (character selection, text input, music selection, etc.)
+- Template status management (activate/disable)
+- Automatic template configuration loading
 
-### 4. AI服务集成
-- LLM对话生成
-- 文生图服务
-- 图生文服务
-- 多API密钥负载均衡
+### 2. Character System
+- Default narrator role: Required narrator character for all stories
+- Custom characters: Create characters with different personality traits
+- Character relationship management: Set related characters through stories
+- Character setting generation: Automatically generate character traits through LLM
 
-## 项目结构
+### 3. Dialogue System
+- Real-time dialogue response
+- Dialogue history management
+- Support for dialogue rollback and recovery
+- Multi-character collaborative dialogue
+
+### 4. AI Service Integration
+- LLM dialogue generation
+- Text-to-image service
+- Image-to-text service
+- Multiple API key load balancing
+
+## Project Structure
 ```
 project/
-├── ui/                # 前端项目
-│   ├── app/                # Next.js页面
-│   ├── components/         # React组件
-│   ├── lib/                # 工具函数
-│   ├── services/           # API服务
-│   └── config/             # 配置文件
+├── ui/                # Frontend project
+│   ├── app/                # Next.js pages
+│   ├── components/         # React components
+│   ├── lib/                # Utility functions
+│   ├── services/           # API services
+│   └── config/             # Configuration files
 │
-├── backend/                # 后端项目
-│   ├── api/               # API接口
-│   ├── models/            # 数据模型
-│   ├── services/          # 业务逻辑
-│   ├── config/            # 配置文件
-│   └── scripts/           # 初始化脚本
-├── contracts/             # 合约
+├── backend/                # Backend project
+│   ├── api/               # API endpoints
+│   ├── models/            # Data models
+│   ├── services/          # Business logic
+│   ├── config/            # Configuration files
+│   └── scripts/           # Initialization scripts
+├── contracts/             # Smart contracts
 │
-└── docs/                  # 项目文档
-    ├── api/               # API文档
-    ├── database/          # 数据库设计
-    └── deployment/        # 部署指南
+└── docs/                  # Project documentation
+    ├── api/               # API documentation
+    ├── database/          # Database design
+    └── deployment/        # Deployment guide
 ```
 
-## 快速开始
+## Quick Start
 
-### 环境要求
+### Requirements
 - Node.js 16+
 - Python 3.10+
 - MongoDB 5.0+
-- DeepSeek API密钥
+- DeepSeek API key
 
-### 后端设置
-1. 安装依赖
+### Backend Setup
+1. Install dependencies
 ```bash
 cd backend
 pip install -r requirements.txt
 ```
 
-2. 配置环境变量
+2. Configure environment variables
 ```bash
 cp .env.example .env
-# 编辑.env文件，填入必要的配置信息
+# Edit .env file with necessary configuration
 ```
 
-3. 初始化数据
+3. Initialize data
 ```bash
-# 初始化数据库
+# Initialize database
 python scripts/init_db.py
 
-# 初始化故事模板
+# Initialize story templates
 python scripts/init_story_templates.py
 ```
 
-4. 启动服务
+4. Start service
 ```bash
 uvicorn api.main:app --reload
 ```
 
-### 前端设置
-1. 安装依赖
+### Frontend Setup
+1. Install dependencies
 ```bash
 cd ui
 npm install
 ```
 
-2. 配置环境变量
+2. Configure environment variables
 ```bash
 cp .env.example .env.local
-# 编辑.env.local文件，填入必要的配置信息
+# Edit .env.local file with necessary configuration
 ```
 
-3. 启动开发服务器
+3. Start development server
 ```bash
 npm run dev
 ```
 
-## API文档
-- [API接口文档](backend/docs/api_design.md)
-- [数据库设计文档](backend/docs/database_design.md)
+## API Documentation
+- [API Interface Documentation](backend/docs/api_design.md)
+- [Database Design Documentation](backend/docs/database_design.md)
 
-## 部署指南
-详细的部署说明请参考[部署指南](docs/deployment.md)。
+## Deployment Guide
+For detailed deployment instructions, please refer to the [Deployment Guide](docs/deployment.md).
 
-## 开发指南
+## Development Guide
 
-### 后端开发
-- API端点定义在 `backend/routes/` 目录下
-- 数据模型定义在 `backend/models/` 目录下
-- 业务逻辑实现在 `backend/services/` 目录下
-- 配置管理在 `backend/config/` 目录下
+### Backend Development
+- API endpoints defined in `backend/routes/` directory
+- Data models defined in `backend/models/` directory
+- Business logic implementation in `backend/services/` directory
+- Configuration management in `backend/config/` directory
 
-### 前端开发
-- 页面组件位于 `ui/app/` 目录下
-- 可复用组件位于 `ui/components/` 目录下
-- API服务封装在 `ui/services/` 目录下
-- 工具函数位于 `ui/lib/` 目录下
+### Frontend Development
+- Page components located in `ui/app/` directory
+- Reusable components located in `ui/components/` directory
+- API service encapsulation in `ui/services/` directory
+- Utility functions located in `ui/lib/` directory
 
-## 贡献指南
-1. Fork 本仓库
-2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 创建 Pull Request
+## Contributing Guide
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Create Pull Request
 
-## 许可证
+## License
 MIT License 
