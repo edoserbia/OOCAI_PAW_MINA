@@ -4,19 +4,10 @@
 PAW is a multi-agent dialogue system based on AgentFi that protects creators' rights through OwnYourAI, transforms AI Agents into user-owned on-chain assets, and verifies user data through zk verification to achieve community-driven AI evolution. Users can create stories with unlimited characters, role-play as girlfriends, play puzzle games, interact with anime characters in One Piece, take psychological tests, get fortune readings, and engage in various unlimited multi-character entertainment interactions. Characters can crawl web information and autonomously learn news, tweets, etc., and through multi-agent discussions and research, achieve practical tasks such as financial event analysis, cryptocurrency market analysis, KOL interaction, and event decision-making.
 
 ## Demo Video
-<div align="center">
-  <iframe src="//player.bilibili.com/player.html?bvid=BV1eTNUecEG1&page=1&high_quality=1&danmaku=0" 
-    width="800" 
-    height="600" 
-    scrolling="no" 
-    border="0" 
-    frameborder="no" 
-    framespacing="0" 
-    allowfullscreen="true"> 
-  </iframe>
-</div>
 
-If the video doesn't play, please [click here to watch on Bilibili](https://www.bilibili.com/video/BV1eTNUecEG1/?vd_source=ed1b58788a2e24a3b428da13bccaac1d)
+[![OOCAI-PAW Demo Video](https://i2.hdslb.com/bfs/archive/7d9a6c28da37c897c4b42b0c1c4177208ad2327f.jpg@640w_400h_1c_!web-home-common-cover.webp)](https://www.bilibili.com/video/BV1eTNUecEG1/?vd_source=ed1b58788a2e24a3b428da13bccaac1d)
+
+[Click here to watch on Bilibili](https://www.bilibili.com/video/BV1eTNUecEG1/?vd_source=ed1b58788a2e24a3b428da13bccaac1d)
 
 ## System Features
 - 🎭 Multi-Character Interaction: Support multiple AI characters participating in conversations simultaneously
@@ -163,15 +154,4 @@ For detailed deployment instructions, please refer to the [Deployment Guide](doc
 ### Frontend Development
 - Page components located in `ui/app/` directory
 - Reusable components located in `ui/components/` directory
-- API service encapsulation in `ui/services/` directory
-- Utility functions located in `ui/lib/` directory
-
-## Contributing Guide
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Create Pull Request
-
-## License
-MIT License 
+- API service encapsulation in `ui/services/`
