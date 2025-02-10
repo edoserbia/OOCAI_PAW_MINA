@@ -5,6 +5,8 @@ PAW is a multi-agent dialogue system based on AgentFi that protects creators' ri
 
 ## Demo Video
 
+[![OOCAI-PAW Demo Video](https://i2.hdslb.com/bfs/archive/7d9a6c28da37c897c4b42b0c1c4177208ad2327f.jpg@640w_400h_1c_!web-home-common-cover.webp)](https://www.bilibili.com/video/BV1eTNUecEG1/?vd_source=ed1b58788a2e24a3b428da13bccaac1d)
+
 [Click here to watch on Bilibili](https://www.bilibili.com/video/BV1eTNUecEG1/?vd_source=ed1b58788a2e24a3b428da13bccaac1d)
 
 ## System Features

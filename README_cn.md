@@ -4,8 +4,19 @@
 PAW是一个AgentFi 的多Agent对话系统，通过OwnYourAI 确保创作者权益，将AI Agent转化为用户拥有的链上资产，用户数据通过zk验证，最终实现社区驱动的AI进化。用户可以创建故事，故事里可以有任意多的角色，可以扮演女友，玩猜谜游戏，进入海贼王中与动画角色互动，进行心理测试，算命等等各种无限制多角色娱乐交互。角色可以爬取网络信息，并自主学习资讯、推文等，经过多agent互相讨论研究，实现金融事件分析、加密货币行情分析、KOL交互、事件决策等实际任务。
 
 ## 演示视频
+<div align="center">
+  <iframe src="//player.bilibili.com/player.html?bvid=BV1eTNUecEG1&page=1&high_quality=1&danmaku=0" 
+    width="800" 
+    height="600" 
+    scrolling="no" 
+    border="0" 
+    frameborder="no" 
+    framespacing="0" 
+    allowfullscreen="true"> 
+  </iframe>
+</div>
 
-请[点击这里在B站观看](https://www.bilibili.com/video/BV1eTNUecEG1/?vd_source=ed1b58788a2e24a3b428da13bccaac1d)
+如果视频无法播放，请[点击这里在B站观看](https://www.bilibili.com/video/BV1eTNUecEG1/?vd_source=ed1b58788a2e24a3b428da13bccaac1d)
 
 ## 系统特点
 - 🎭 多角色互动：支持多个AI角色同时参与对话
